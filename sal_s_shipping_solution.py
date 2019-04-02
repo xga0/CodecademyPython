@@ -11,7 +11,7 @@ def cost_of_ground_shipping(weight):
   else:
     cost = weight * 4.75 + 20
   return cost
-
+# test the function
 print(cost_of_ground_shipping(8.4))
 
 cost_of_premium_ground_shipping = 125
@@ -29,7 +29,7 @@ def cost_of_drone_shipping(weight):
   else:
     cost = weight * 14.25
   return cost
-
+# test the function
 print(cost_of_drone_shipping(1.5))
 
 def cheapest_shipping_method(weight):
@@ -41,7 +41,7 @@ def cheapest_shipping_method(weight):
     return "Your cheapest shipping method is Ground Shipping, and your shipping fee will be ${}.".format(cost_of_ground) 
   elif cost_of_ground > cost_of_drone and cost_of_premium_ground_shipping > cost_of_drone:
     return "Your cheapest shipping method is Drone Shipping, and your shipping fee will be ${}.".format(cost_of_drone) 
-
+# test the function
 print(cheapest_shipping_method(4.8))
 print(cheapest_shipping_method(41.5))
 
